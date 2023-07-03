@@ -42,5 +42,9 @@ print("I like {hobby} for {duration} hrs a day".format(hobby='coding', duration=
 # Validations
 print("alphanumeric:", c.isalnum(), "isalpha", "HELLO".isalpha(), "ValidString", "HelloWorld".isidentifier())
 # Split and Join
-print("Covert String to List", c.split(), c.split("l"))
-print("Joint:", " ".join(['He', '', 'o Wor', 'd']))
+print("Covert String to List", c.split(), c.split(" "))
+print("Joint:", "".join(['Hel', 'l', 'o Worl', 'd']))
+print("     Name     ".strip())  # Used to make sure only correct string is taken without spaces
+
+# List Array
+List = []
