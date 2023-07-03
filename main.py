@@ -18,8 +18,10 @@ print("kol" < "Kol")
 print("hello" and "world")
 print("" and "Hello")  # Empty String = false and Non-Empty String = true
 print("" or "Hello")
-
-# Tricky AND OR
+# Membership operator IN notIn
+print('h' in c or 'H' in c)  # False or True = True
+print('world' not in c and 'World' not in c)  # True and False = False
+# **Tricky AND OR
 print("Hello" or "World")  # Hello: 1 or 0  will be 1 no matter what is next
 print("Hello" and "World")  # World: 1 and 0 = 0,,,1 and 1 = 1 need to confirm the second input
 
@@ -29,7 +31,16 @@ for i in c[2:9:2]:
 for i in c[::-1]:
     print(i)
 
-# Membership operator IN notIn
-print('h' in c or 'H' in c)  # False or True = True
-print('world' not in c and 'World' not in c)   # True and False = False
-
+# String Len, Max, Min, Sorted
+print(len(c), max(c), min(c), sorted(c), sorted(c, reverse=True))
+# String Capitalize/Title/Upper/Lower/Swapcase
+print(c.title(), c.upper(), c.capitalize(), c.swapcase(), c.count('l'), c.find('w'), c.index('rld'))
+print("Ends with 'ld':", c.endswith('ld'), "Start with 'ell':", c.startswith('ell'))
+# **Format string
+print("I like {1} for {0} hrs a day".format('coding', 9))  # 0 and 1 are positions
+print("I like {hobby} for {duration} hrs a day".format(hobby='coding', duration=9))
+# Validations
+print("alphanumeric:", c.isalnum(), "isalpha", "HELLO".isalpha(), "ValidString", "HelloWorld".isidentifier())
+# Split and Join
+print("Covert String to List", c.split(), c.split("l"))
+print("Joint:", " ".join(['He', '', 'o Wor', 'd']))
