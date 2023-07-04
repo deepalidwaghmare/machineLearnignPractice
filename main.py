@@ -47,4 +47,17 @@ print("Joint:", "".join(['Hel', 'l', 'o Worl', 'd']))
 print("     Name     ".strip())  # Used to make sure only correct string is taken without spaces
 
 # List Array
-List = []
+List = [0,1,2,3,4,5,[4,5,2,[3,9]]]
+print(List[-1][-1][0])
+print("Reverse List", List[::-1])
+# **Append and Extend
+print("Append:", List.append([100,300]), List, "Extend", List.extend([500, 800]), List)
+print("Insert 4000", List.insert(4,[4000,'goa']),List)
+
+L1="how are you?"
+L2 = []
+print(L1.split(' '))
+for i in L1.split():
+     L2.append(i.capitalize())
+print(L2)
+print(" ".join(L2))
