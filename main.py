@@ -79,4 +79,4 @@ print(L2)
 # Create Tuple
 T = ('Goa', 1, 3, 4, 5)  # Tuples are immutable Edit and Del element cannot be possible
 print(T[2:4])  # Tuples if declared with single element cannot be considered tuple
-# Tuples are read-only data type
+# Tuples are read-only data typ
