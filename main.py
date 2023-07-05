@@ -47,18 +47,18 @@ print("Joint:", "".join(['Hel', 'l', 'o Worl', 'd']))
 print("     Name     ".strip())  # Used to make sure only correct string is taken without spaces
 
 # # ##List###
-List = [0,1,2,3,4,5,[4,5,2,[3,9]]]
+List = [0, 1, 2, 3, 4, 5, [4, 5, 2, [3, 9]]]
 print(List[-1][-1][0])
 print("Reverse List", List[::-1])
 # **Append and Extend
-print("Append:", List.append([100,300]), List, "Extend", List.extend([500, 800]), List)
-print("Insert 4000", List.insert(4,[4000,'goa']),List)
+print("Append:", List.append([100, 300]), List, "Extend", List.extend([500, 800]), List)
+print("Insert 4000", List.insert(4, [4000, 'goa']), List)
 
 # Covert String first letter capital
-L1="who are you?"
+L1 = "who are you?"
 L2 = []
 for i in L1.split():
-     L2.append(i.capitalize())
+    L2.append(i.capitalize())
 print(" ".join(L2))
 # Separating String from special character
 L1 = "deepalidwaghmare@yahoo.com"
@@ -66,9 +66,9 @@ print(L1.split('@'))
 for i in L1.split('@'):
     L2.append(i)
 print(L2[3])
-print(L1[:L1.find('@')])  #single line code
+print(L1[:L1.find('@')])  # single line code
 # Remove duplicate in List
-L1 = [1,1,1,2,2,3,3,3,3]
+L1 = [1, 1, 1, 2, 2, 3, 3, 3, 3]
 L2 = []
 for i in L1:
     if i not in L2:
@@ -76,4 +76,7 @@ for i in L1:
 print(L2)
 
 # ###Tuples####  Create, Access, Edit ,Add, Delete, Operations, Functions
-
+# Create Tuple
+T = ('Goa', 1, 3, 4, 5)  # Tuples are immutable Edit and Del element cannot be possible
+print(T[2:4])  # Tuples if declared with single element cannot be considered tuple
+# Tuples are read-only data type
