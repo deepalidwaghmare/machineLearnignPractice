@@ -46,7 +46,7 @@ print("Covert String to List", c.split(), c.split(" "))
 print("Joint:", "".join(['Hel', 'l', 'o Worl', 'd']))
 print("     Name     ".strip())  # Used to make sure only correct string is taken without spaces
 
-# List Array
+# # ##List###
 List = [0,1,2,3,4,5,[4,5,2,[3,9]]]
 print(List[-1][-1][0])
 print("Reverse List", List[::-1])
@@ -54,10 +54,26 @@ print("Reverse List", List[::-1])
 print("Append:", List.append([100,300]), List, "Extend", List.extend([500, 800]), List)
 print("Insert 4000", List.insert(4,[4000,'goa']),List)
 
-L1="how are you?"
+# Covert String first letter capital
+L1="who are you?"
 L2 = []
-print(L1.split(' '))
 for i in L1.split():
      L2.append(i.capitalize())
-print(L2)
 print(" ".join(L2))
+# Separating String from special character
+L1 = "deepalidwaghmare@yahoo.com"
+print(L1.split('@'))
+for i in L1.split('@'):
+    L2.append(i)
+print(L2[3])
+print(L1[:L1.find('@')])  #single line code
+# Remove duplicate in List
+L1 = [1,1,1,2,2,3,3,3,3]
+L2 = []
+for i in L1:
+    if i not in L2:
+        L2.append(i)
+print(L2)
+
+# ###Tuples####  Create, Access, Edit ,Add, Delete, Operations, Functions
+
