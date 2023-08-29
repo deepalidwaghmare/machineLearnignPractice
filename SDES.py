@@ -1,6 +1,7 @@
 from Operations import Operations
 
 class SDES :
+
     plaintext_block_size = 8
     key_size = 10
     no_of_rounds = 2
